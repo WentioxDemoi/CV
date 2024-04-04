@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SiteVitrine/static/css/main.2f0d787e.css",
+    "main.js": "/SiteVitrine/static/js/main.54273413.js",
+    "static/js/453.20952338.chunk.js": "/SiteVitrine/static/js/453.20952338.chunk.js",
+    "static/media/Signature White.png": "/SiteVitrine/static/media/Signature White.71b1a1c3f57642d825c3.png",
+    "index.html": "/SiteVitrine/index.html",
+    "main.2f0d787e.css.map": "/SiteVitrine/static/css/main.2f0d787e.css.map",
+    "main.54273413.js.map": "/SiteVitrine/static/js/main.54273413.js.map",
+    "453.20952338.chunk.js.map": "/SiteVitrine/static/js/453.20952338.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f0d787e.css",
+    "static/js/main.54273413.js"
+  ]
+}
