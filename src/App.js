@@ -13,9 +13,9 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <Loading />   */}
+      {/* <Loading />  
       <Logo/>
-      <Presentation/>
+      <Presentation/> */}
       <Parcours/>
       {/* <Projet/> */}
     </div>

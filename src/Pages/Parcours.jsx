@@ -1,16 +1,4 @@
-import {
-    Timeline,
-    TimelineItem,
-    TimelineConnector,
-    TimelineIcon,
-    Typography,
-    TimelineHeader,
-  } from "@material-tailwind/react";
-  import {
-    BellIcon,
-    ArchiveBoxIcon,
-    CurrencyDollarIcon,
-  } from "@heroicons/react/24/solid";
+
 import { Fragment } from "react";
 
 
@@ -19,8 +7,8 @@ import { Fragment } from "react";
   export default function Parcours() {
     const events = [
         {
-            heading: "Okay",
-            subHeading: "SubOkay",
+            heading: "Okqsdiofughsqoiduhgiousdqhgiuhsdihfisdhgfiudhsfgiuay",
+            subHeading: "SubOqsdfhqisudhgiuhdgiuhsdiughiusdhfgiuhdsiufhisduhfkay",
             direction: "right"
         },
         {
@@ -56,6 +44,7 @@ import { Fragment } from "react";
                     { key < (events.length - 1) && <Circle/>}
                 </Fragment>
             ))}
+            <Circle/>
         </div>
     );
   }
@@ -67,7 +56,7 @@ import { Fragment } from "react";
   } 
   const Pillar = () => {
     return (
-        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-full mx-auto"></div>
+        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-28 mx-auto"></div>
     )
   } 
   const EventCard = ({heading, subHeading}) => {
