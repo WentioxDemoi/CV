@@ -1,7 +1,18 @@
 import React from 'react';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { motion } from 'framer-motion';
-import github from '../Assets/Github.png'
+import Photo from '../Assets/Photo.jpg'
+import Python from '../Assets/Python.png'
+import CPP from '../Assets/C++.png'
+import CSharp from '../Assets/CSharp.png'
+import C from '../Assets/C.png'
+import Swift from '../Assets/Swift.png'
+import Java from '../Assets/Java.png'
+import Tailwind from '../Assets/Tailwind.png'
+import ReactJS from '../Assets/React.png'
+import Angular from '../Assets/Angular.png'
+import Spring from '../Assets/Spring.png'
+import Docker from '../Assets/Docker.png'
 
 export default function Home() {
   return (
@@ -10,20 +21,16 @@ export default function Home() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="lg:max-w-lg">
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Hello World !</h2>
-                <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Je m'appel Rémi Desbordes
-                </p>
-              </div>
+            <div className="lg:max-w-lg">
+              <h1 className="mt-28 text-2xl font-bold tracking-tight text-gray-900">Hello World !</h1>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
+                Je m'appelle <strong><span className="font-bold">Rémi Desbordes</span></strong>
+              </p>
+            </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden lg:pl-[40%]">
-            <img
-              className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              src={github}
-              alt=""
-            />
+          <div className="flex items-center justify-center lg:sticky lg:top-1/3 lg:col-start-2 lg:row-span-5 lg:row-start-1 lg:overflow-hidden lg:pl-[-5%] lg:pb-[17%]">
+            <img className="flex w-[20rem] items-center justify-center max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10" src={Photo} alt="" />
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
@@ -42,42 +49,57 @@ export default function Home() {
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   Actuellement à la recherche d'un stage de pré-embauche, je recherche une entreprise
                 </p>
-                <h2 className="text-xl font-bold mt-8 mb-4 text-center">Languages</h2>
+                <h2 className="text-xl font-bold mt-12 mb-4 text-center">Languages</h2>
                 <div className="flex flex-wrap justify-between mt-10">
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={C} alt="GitHub Logo" />
                     <p className="text-center mt-4">C</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={CPP} alt="GitHub Logo" />
                     <p className="text-center mt-4">C++</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={CSharp} alt="GitHub Logo" />
                     <p className="text-center mt-4">C#</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Python} alt="GitHub Logo" />
                     <p className="text-center mt-4">Python</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
-                    <p className="text-center mt-4">Go</p>
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Java} alt="GitHub Logo" />
+                    <p className="text-center mt-4">Java</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Swift} alt="GitHub Logo" />
                     <p className="text-center mt-4">Swift</p>
                   </div>
                 </div>
-                <h2 className="text-xl font-bold mt-8 mb-4 text-center">Framework</h2>
+                <h2 className="text-xl font-bold mt-12 mb-4 text-center">Framework</h2>
                 <div className="flex flex-wrap justify-between mt-10">
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={ReactJS} alt="GitHub Logo" />
                     <p className="text-center mt-4">ReactJS</p>
                   </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0">
-                    <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" />
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Tailwind} alt="GitHub Logo" />
                     <p className="text-center mt-4">Tailwind CSS</p>
+                  </div>
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Spring} alt="GitHub Logo" />
+                    <p className="text-center mt-4">Spring</p>
+                  </div>
+                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Angular} alt="GitHub Logo" />
+                    <p className="text-center mt-4">Angular</p>
+                  </div>
+                </div>
+                <h2 className="text-xl font-bold mt-12 mb-10 text-center">DevOPS</h2>
+                <div className="flex flex-wrap justify-between mt-0">
+                  <div className="flex flex-col items-center justify-center w-full sm:w-full lg:w-full mb-4 lg:mb-0 mt-10">
+                    <img className="h-12 w-12 object-contain" src={Docker} alt="GitHub Logo" />
+                    <p className="text-center mt-4">Docker</p>
                   </div>
                 </div>
               </div>

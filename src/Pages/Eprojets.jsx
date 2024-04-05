@@ -10,16 +10,9 @@ const includedFeatures = [
 export default function projets() {
   return (
     <div>
-        {/* <NavBar/> */}
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            {/* <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple no-tricks pricing</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-                Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-                in. Explicabo id ut laborum.
-            </p>
-            </div> */}
+        <h2 className="text-xl font-bold mt-12 mb-4 text-center">Quelques projets</h2>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
             <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>

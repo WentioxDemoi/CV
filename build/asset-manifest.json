@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.2f0d787e.css",
-    "main.js": "/CV/static/js/main.65864f37.js",
-    "static/js/453.20952338.chunk.js": "/CV/static/js/453.20952338.chunk.js",
+    "main.css": "/CV/static/css/main.0588f477.css",
+    "main.js": "/CV/static/js/main.4f94e7ee.js",
+    "static/js/453.ad02f82e.chunk.js": "/CV/static/js/453.ad02f82e.chunk.js",
+    "static/media/React.png": "/CV/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Python.png": "/CV/static/media/Python.82efb64f8698a267f8bf.png",
+    "static/media/Spring.png": "/CV/static/media/Spring.1a753d3a09a8df3cec6c.png",
+    "static/media/Java.png": "/CV/static/media/Java.ec4d37974794a1080e67.png",
+    "static/media/Swift.png": "/CV/static/media/Swift.a4ba8e294979e0d4c61d.png",
+    "static/media/Docker.png": "/CV/static/media/Docker.1bfc908921144d08d154.png",
+    "static/media/C++.png": "/CV/static/media/C++.5185ce2f4c945505ee4f.png",
+    "static/media/Angular.png": "/CV/static/media/Angular.01af70871edfe2e291c4.png",
+    "static/media/CSharp.png": "/CV/static/media/CSharp.f089e215291596c8b583.png",
+    "static/media/Tailwind.png": "/CV/static/media/Tailwind.9bff1085bc1e2a0cff89.png",
+    "static/media/C.png": "/CV/static/media/C.bbbbbabc8c191bfb99bf.png",
     "static/media/Signature White.png": "/CV/static/media/Signature White.71b1a1c3f57642d825c3.png",
     "index.html": "/CV/index.html",
-    "main.2f0d787e.css.map": "/CV/static/css/main.2f0d787e.css.map",
-    "main.65864f37.js.map": "/CV/static/js/main.65864f37.js.map",
-    "453.20952338.chunk.js.map": "/CV/static/js/453.20952338.chunk.js.map"
+    "main.0588f477.css.map": "/CV/static/css/main.0588f477.css.map",
+    "main.4f94e7ee.js.map": "/CV/static/js/main.4f94e7ee.js.map",
+    "453.ad02f82e.chunk.js.map": "/CV/static/js/453.ad02f82e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f0d787e.css",
-    "static/js/main.65864f37.js"
+    "static/css/main.0588f477.css",
+    "static/js/main.4f94e7ee.js"
   ]
 }

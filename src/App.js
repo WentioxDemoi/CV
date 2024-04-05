@@ -6,16 +6,18 @@ import React, { useState, useEffect } from 'react';
 import Logo from './Pages/Logo'
 import Presentation from './Pages/Home'
 import Projet from './Pages/Eprojets'
+import Parcours from './Pages/Parcours'
 
 
 const App = () => {
 
   return (
     <div className="App">
-      <Loading />  
+      {/* <Loading />   */}
       <Logo/>
       <Presentation/>
-      <Projet/>
+      <Parcours/>
+      {/* <Projet/> */}
     </div>
   );
 };

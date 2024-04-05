@@ -11,64 +11,71 @@ import {
     ArchiveBoxIcon,
     CurrencyDollarIcon,
   } from "@heroicons/react/24/solid";
-  import NavBar from './Nav'
+import { Fragment } from "react";
+
+
+
    
   export default function Parcours() {
+    const events = [
+        {
+            heading: "Okay",
+            subHeading: "SubOkay",
+            direction: "right"
+        },
+        {
+            heading: "Okqsday",
+            subHeading: "SubqsOkay",
+            direction: "left"
+        },
+        {
+            heading: "Okaffdsy",
+            subHeading: "SuqsdbOkay",
+            direction: "right"
+        }
+    ]
     return (
-        <div>
-            {/* <NavBar/> */}
-        <div className="w-[25rem]">
-            <Timeline>
-            <TimelineItem className="h-28">
-                <TimelineConnector className="!w-[78px]" />
-                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                <TimelineIcon className="p-3" variant="ghost">
-                    <BellIcon className="h-5 w-5" />
-                </TimelineIcon>
-                <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="blue-gray">
-                    $2400, Design changes
-                    </Typography>
-                    <Typography variant="small" color="gray" className="font-normal">
-                    22 DEC 7:20 PM
-                    </Typography>
-                </div>
-                </TimelineHeader>
-            </TimelineItem>
-            <TimelineItem className="h-28">
-                <TimelineConnector className="!w-[78px]" />
-                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                <TimelineIcon className="p-3" variant="ghost" color="red">
-                    <ArchiveBoxIcon className="h-5 w-5" />
-                </TimelineIcon>
-                <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="blue-gray">
-                    New order #1832412
-                    </Typography>
-                    <Typography variant="small" color="gray" className="font-normal">
-                    21 DEC 11 PM
-                    </Typography>
-                </div>
-                </TimelineHeader>
-            </TimelineItem>
-            <TimelineItem className="h-28">
-                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                <TimelineIcon className="p-3" variant="ghost" color="green">
-                    <CurrencyDollarIcon className="h-5 w-5" />
-                </TimelineIcon>
-                <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="blue-gray">
-                    Payment completed for order #4395133
-                    </Typography>
-                    <Typography variant="small" color="gray" className="font-normal">
-                    20 DEC 2:20 AM
-                    </Typography>
-                </div>
-                </TimelineHeader>
-            </TimelineItem>
-            </Timeline>
+        <div className="flex flex-col gap-y-3 w-full my-4">
+            <Circle/>
+            {events.map((event, key) => (
+  <Fragment key={key}>
+                    <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
+                        {
+                            event.direction === 'left' ? (
+                                <EventCard heading={event.heading} subHeading={event.subHeading}/>
+                            ) : (<div></div>)
+                        }
+                        <Pillar/>
+                        {
+                            event.direction === 'right' ? (
+                                <EventCard heading={event.heading} subHeading={event.subHeading}/>
+                            ) : (<div></div>)
+                        }
+
+                    </div>
+                    { key < (events.length - 1) && <Circle/>}
+                </Fragment>
+            ))}
         </div>
-      </div>
     );
   }
+
+  const Circle = () => {
+    return (
+        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-full w-4 h-4 mx-auto"></div>
+    )
+  } 
+  const Pillar = () => {
+    return (
+        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-full mx-auto"></div>
+    )
+  } 
+  const EventCard = ({heading, subHeading}) => {
+    return (
+        <div className="flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
+            <div className="text-blue-800 font-bold text-lg border-b">{heading}</div>
+            <div className="test-sm text-gray-700">{subHeading}</div>
+        </div>
+    )
+  } 
   
