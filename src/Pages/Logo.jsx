@@ -1,5 +1,4 @@
 import Signature from '../Assets/Signature White.png'
-import React, { useState } from 'react';
 
 function Logo() {
   return (

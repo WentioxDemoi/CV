@@ -1,6 +1,5 @@
 import React from 'react';
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import { motion, useAnimation } from 'framer-motion';
+//import { useAnimation, useInView } from 'framer-motion';
 import Photo from '../Assets/Photo.jpg'
 import Python from '../Assets/Python.png'
 import CPP from '../Assets/C++.png'
@@ -13,7 +12,7 @@ import ReactJS from '../Assets/React.png'
 import Angular from '../Assets/Angular.png'
 import Spring from '../Assets/Spring.png'
 import Docker from '../Assets/Docker.png'
-import { useInView } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export default function Home() {
 
