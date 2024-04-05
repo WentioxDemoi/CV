@@ -20,6 +20,11 @@ import { Fragment } from "react";
             heading: "Okaffdsy",
             subHeading: "SuqsdbOkay",
             direction: "right"
+        },
+        {
+            heading: "Okaffdsy",
+            subHeading: "SuqsdbOkay",
+            direction: "right"
         }
     ]
     return (
@@ -56,12 +61,12 @@ import { Fragment } from "react";
   } 
   const Pillar = () => {
     return (
-        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-28 mx-auto"></div>
+        <div className="bg-gradient-to-b from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-28 mx-auto"></div>
     )
   } 
   const EventCard = ({heading, subHeading}) => {
     return (
-        <div className="flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
+        <div className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
             <div className="text-blue-800 font-bold text-lg border-b">{heading}</div>
             <div className="test-sm text-gray-700">{subHeading}</div>
         </div>
