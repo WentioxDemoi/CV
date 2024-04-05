@@ -1,6 +1,6 @@
 import React from 'react';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import Photo from '../Assets/Photo.jpg'
 import Python from '../Assets/Python.png'
 import CPP from '../Assets/C++.png'
@@ -13,8 +13,16 @@ import ReactJS from '../Assets/React.png'
 import Angular from '../Assets/Angular.png'
 import Spring from '../Assets/Spring.png'
 import Docker from '../Assets/Docker.png'
+import { useInView } from "framer-motion";
 
 export default function Home() {
+
+  const variants = {
+    hidden: { opacity: 0, x: 150 },
+    visible: { opacity: 1, x: 0, transition: { delay: 1.5 } }
+  };
+  
+
   return (
     <div>
       <div className="relative isolate overflow-hidden bg-white px-6 py-10 sm:py-18 lg:overflow-visible lg:px-0">
@@ -41,41 +49,46 @@ export default function Home() {
                 </p>
 
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  J'ai 22 ans et je suis tombé dans le chaudron de l'informatique lorsque j'étais petit
+                BLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABLAblaBLABLAblaBLAB LAblaBLABLAblaBLABLAbla BLABLAblaBLABLAblaBLABLAbla
                 </p>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Je fais parti de l'une des dernières générations à avoir connu les téléphones à touches et à avoir appris à coder sans IA générative de texte
+                  BLABLAbla BLABLAblaBLABLAblaBLABLAb laBLABLAblaBLABL AblaBLABLAblaBLABLAblaBLABLAbla BLABLAblaBLABLA blaBLABLAbla
                 </p>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Actuellement à la recherche d'un stage de pré-embauche, je recherche une entreprise
+                BLABLAbla BLABLAblaBLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABL AblaBLABLAblaBLABLAb laBLABLAbl aBLABLAb laBLABLAbla
                 </p>
                 <h2 className="text-xl font-bold mt-12 mb-4 text-center">Languages</h2>
                 <div className="flex flex-wrap justify-between mt-10">
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={C} alt="GitHub Logo" />
-                    <p className="text-center mt-4">C</p>
-                  </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={CPP} alt="GitHub Logo" />
-                    <p className="text-center mt-4">C++</p>
-                  </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={CSharp} alt="GitHub Logo" />
-                    <p className="text-center mt-4">C#</p>
-                  </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={Python} alt="GitHub Logo" />
-                    <p className="text-center mt-4">Python</p>
-                  </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={Java} alt="GitHub Logo" />
-                    <p className="text-center mt-4">Java</p>
-                  </div>
-                  <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
-                    <img className="h-12 w-12 object-contain" src={Swift} alt="GitHub Logo" />
-                    <p className="text-center mt-4">Swift</p>
-                  </div>
-                </div>
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={C} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">C</motion.p>
+      </motion.div>
+
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={CPP} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">C++</motion.p>
+      </motion.div>
+
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={CSharp} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">C#</motion.p>
+      </motion.div>
+
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={Python} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">Python</motion.p>
+      </motion.div>
+
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={Java} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">Java</motion.p>
+      </motion.div>
+
+      <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
+        <motion.img className="h-12 w-12 object-contain" src={Swift} alt="GitHub Logo" />
+        <motion.p className="text-center mt-4">Swift</motion.p>
+      </motion.div>
+    </div>
                 <h2 className="text-xl font-bold mt-12 mb-4 text-center">Framework</h2>
                 <div className="flex flex-wrap justify-between mt-10">
                   <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
