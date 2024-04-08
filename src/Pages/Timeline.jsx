@@ -9,38 +9,51 @@ import { useRef } from 'react';
         {
             heading: "Début Epitech",
             subHeading: "2020",
-            direction: "right"
+            direction: "right",
+            id: "epitech"
         },
         {
             heading: "Stage",
             subHeading: "2021",
-            direction: "left"
+            direction: "left",
+            id: "stagepapa"
+        },
+        {
+            heading: "Hackathon",
+            subHeading: "11/2022",
+            direction: "right",
+            id: "Hackathonactin"
+        },
+        {
+          heading: "Hackathon",
+          subHeading: "11/2022",
+          direction: "left",
+          id: "Hackathonmuseo"
+        },
+        {
+          heading: "Hackathon",
+          subHeading: "11/2022",
+          direction: "right",
+          id: "Hackathonstarton"
+        },
+        {
+          heading: "Hackathon",
+          subHeading: "01/2023",
+          direction: "left",
+          id: "Hackathonhack"
         },
         {
             heading: "Stage",
             subHeading: "2023",
-            direction: "right"
+            direction: "right",
+            id: "stagethales"
         },
         {
-            heading: "Début Erasmus",
-            subHeading: "2023",
-            direction: "left"
+            heading: "Erasmus",
+            subHeading: "2023-2024",
+            direction: "left",
+            id: "unical"
         },
-        {
-            heading: "Fin Erasmus",
-            subHeading: "2024",
-            direction: "right"
-        },
-        {
-            heading: "Stage",
-            subHeading: "2025",
-            direction: "left"
-        },
-        {
-            heading: "Fin Epitech",
-            subHeading: "2025",
-            direction: "right"
-        }
     ]
     return (
         <div className="flex flex-col gap-y-3 w-full my-4">
@@ -50,18 +63,18 @@ import { useRef } from 'react';
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
                         {
                             event.direction === 'left' ? (
-                                <EventCard heading={event.heading} subHeading={event.subHeading} direction={event.direction}/>
+                                <EventCard heading={event.heading} subHeading={event.subHeading} direction={event.direction} id={event.id}/>
                             ) : (<div></div>)
                         }
                         <Pillar/>
                         {
                             event.direction === 'right' ? (
-                                <EventCard heading={event.heading} subHeading={event.subHeading} direction={event.direction}/>
+                                <EventCard heading={event.heading} subHeading={event.subHeading} direction={event.direction} id={event.id}/>
                             ) : (<div></div>)
                         }
 
                     </div>
-                    { key < (events.length - 1) && <Circle/>}
+                    { key < (events.length - 1) && <Circle/> && <br/> && <Circle/> && <Circle/>}
                 </Fragment>
             ))}
             <Circle/>
@@ -80,7 +93,7 @@ import { useRef } from 'react';
     )
   } 
   
-  const EventCard = ({ heading, subHeading, direction }) => {
+  const EventCard = ({ heading, subHeading, direction, id }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { threshold: 0.5 });
   
@@ -95,6 +108,16 @@ import { useRef } from 'react';
         transition: { duration: 0.1 },
       },
     };
+
+    const handleClick = (id) => {
+      const targetElement = document.querySelector('#' + id);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 150,
+          behavior: 'smooth'
+        });
+      }
+    };
   
     return (
       <motion.div
@@ -103,6 +126,7 @@ import { useRef } from 'react';
         animate={isInView ? "visible" : "hidden"}
         variants={variants}
         className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
+        onClick={() => handleClick(id)}
       >
         <div className="text-blue-800 font-bold text-lg border-b">{heading}</div>
         <div className="test-sm text-gray-700">{subHeading}</div>

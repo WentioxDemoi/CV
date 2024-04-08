@@ -1,15 +1,15 @@
 import Loading from './component/LoadingScreen'
 import Logo from './Pages/Logo'
 import Presentation from './Pages/Home'
-import Projet from './Pages/Eprojets'
-import Parcours from './Pages/Parcours'
+import Projet from './component/TimelineComponent'
+import Parcours from './Pages/Timeline'
 
 
 const App = () => {
 
   return (
     <div className="App">
-      <Loading />  
+      {/* <Loading />   */}
       <Logo/>
       <Presentation/>
       <Parcours/>
