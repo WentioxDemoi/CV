@@ -57,7 +57,7 @@ import { useRef } from 'react';
     ]
     return (
         <div className="flex flex-col gap-y-3 w-full my-4">
-            <Circle/>
+            <div id="Circle" className="bg-gradient-to-r from-gray-600 to-teal-100 rounded-full w-4 h-4 mx-auto"></div>
             {events.map((event, key) => (
   <Fragment key={key}>
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
@@ -128,7 +128,7 @@ import { useRef } from 'react';
         className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
         onClick={() => handleClick(id)}
       >
-        <div className="text-blue-800 font-bold text-lg border-b">{heading}</div>
+        <div id={heading} className="text-blue-700 font-bold text-lg border-b">{heading}</div>
         <div className="test-sm text-gray-700">{subHeading}</div>
       </motion.div>
     );
