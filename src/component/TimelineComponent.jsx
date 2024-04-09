@@ -33,9 +33,8 @@ export default function projets() {
                     ))}
                     </ul>
                 </div>
-                <div className="flex flex-col justify-between h-full -mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-
-<div className="flex-grow rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div className="p-2 lg:w-full lg:max-w-md lg:flex-shrink-0 flex-1">
+    <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 h-full">
                     <div className="mx-auto max-w-xs px-8">
                         <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
                         <p className="mt-6 flex items-baseline justify-center gap-x-2">
@@ -55,7 +54,7 @@ export default function projets() {
                     </div>
                 </div>
                 </div>
-            <div id="stagepapa" className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                <div id="stagepapa" className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none flex">
             <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
                 <p className="mt-6 text-base leading-7 text-gray-600">
@@ -77,8 +76,9 @@ export default function projets() {
                 ))}
                 </ul> */}
             </div>
-            <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div className="p-2 lg:w-full lg:max-w-md lg:flex-shrink-0 flex-1">
+    <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 h-full">
+      ...
                 <div className="mx-auto max-w-xs px-8">
                     <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
                     <p className="mt-6 flex items-baseline justify-center gap-x-2">
