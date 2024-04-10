@@ -44,11 +44,11 @@ export default function Home() {
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                 
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Si vous êtes là, c'est que vous avez cliqué sur le lien présent sur mon CV et que vous voulez en savoir plus concernant mon profil.
+                Si vous êtes là, c'est que vous avez cliqué sur le lien présent sur mon CV et que vous voulez en savoir plus concernant mon profil.
                 </p>
 
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                BLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABLAblaBLABLAblaBLAB LAblaBLABLAblaBLABLAbla BLABLAblaBLABLAblaBLABLAbla
+                Vous trouverez ici tout plein d’informations sur ce que j’ai fait durant mon cursus
                 </p>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   BLABLAbla BLABLAblaBLABLAblaBLABLAb laBLABLAblaBLABL AblaBLABLAblaBLABLAblaBLABLAbla BLABLAblaBLABLA blaBLABLAbla

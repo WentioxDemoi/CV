@@ -19,25 +19,25 @@ import { useRef } from 'react';
             id: "stagepapa"
         },
         {
-            heading: "Hackathon",
+            heading: "Actin Space",
             subHeading: "11/2022",
             direction: "right",
             id: "Hackathonactin"
         },
         {
-          heading: "Hackathon",
+          heading: "Muséomix",
           subHeading: "11/2022",
           direction: "left",
           id: "Hackathonmuseo"
         },
         {
-          heading: "Hackathon",
+          heading: "Starton Online",
           subHeading: "11/2022",
           direction: "right",
           id: "Hackathonstarton"
         },
         {
-          heading: "Hackathon",
+          heading: "Hack4Inclusion",
           subHeading: "01/2023",
           direction: "left",
           id: "Hackathonhack"

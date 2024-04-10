@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.f093bcab.css",
-    "main.js": "/CV/static/js/main.2a52fad7.js",
+    "main.css": "/CV/static/css/main.bc90d9ff.css",
+    "main.js": "/CV/static/js/main.253320f0.js",
     "static/js/453.20952338.chunk.js": "/CV/static/js/453.20952338.chunk.js",
     "static/media/React.png": "/CV/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/Python.png": "/CV/static/media/Python.82efb64f8698a267f8bf.png",
     "static/media/Spring.png": "/CV/static/media/Spring.1a753d3a09a8df3cec6c.png",
     "static/media/Java.png": "/CV/static/media/Java.ec4d37974794a1080e67.png",
+    "static/media/Qrcode.png": "/CV/static/media/Qrcode.0cb96b4d9c1d3b9ea70a.png",
     "static/media/Swift.png": "/CV/static/media/Swift.a4ba8e294979e0d4c61d.png",
     "static/media/Docker.png": "/CV/static/media/Docker.1bfc908921144d08d154.png",
     "static/media/C++.png": "/CV/static/media/C++.5185ce2f4c945505ee4f.png",
@@ -16,12 +17,12 @@
     "static/media/C.png": "/CV/static/media/C.bbbbbabc8c191bfb99bf.png",
     "static/media/Signature White.png": "/CV/static/media/Signature White.71b1a1c3f57642d825c3.png",
     "index.html": "/CV/index.html",
-    "main.f093bcab.css.map": "/CV/static/css/main.f093bcab.css.map",
-    "main.2a52fad7.js.map": "/CV/static/js/main.2a52fad7.js.map",
+    "main.bc90d9ff.css.map": "/CV/static/css/main.bc90d9ff.css.map",
+    "main.253320f0.js.map": "/CV/static/js/main.253320f0.js.map",
     "453.20952338.chunk.js.map": "/CV/static/js/453.20952338.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f093bcab.css",
-    "static/js/main.2a52fad7.js"
+    "static/css/main.bc90d9ff.css",
+    "static/js/main.253320f0.js"
   ]
 }
