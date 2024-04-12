@@ -105,7 +105,7 @@ import { useRef } from 'react';
       visible: {
         x: 0,
         opacity: 1,
-        transition: { duration: 0.1 },
+        transition: { duration: 1 },
       },
     };
 
@@ -125,11 +125,13 @@ import { useRef } from 'react';
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={variants}
-        className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
+        //className="transition duration-500 ease-in-out trasition-transform hover:-translate-y-10 hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
         onClick={() => handleClick(id)}
       >
-        <div id={heading} className="text-blue-700 font-bold text-lg border-b">{heading}</div>
-        <div className="test-sm text-gray-700">{subHeading}</div>
+        <div className="transition duration-200 ease-in-out trasition-transform hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1">
+          <div id={heading} className="text-blue-700 font-bold text-lg border-b">{heading}</div>
+          <div className="test-sm text-gray-700">{subHeading}</div>
+        </div>
       </motion.div>
     );
   };

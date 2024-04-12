@@ -1,4 +1,5 @@
 import Signature from '../Assets/Signature White.png'
+import React from "react";
 
 function Logo() {
   return (
