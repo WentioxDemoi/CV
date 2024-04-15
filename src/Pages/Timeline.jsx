@@ -99,11 +99,11 @@ import { useRef } from 'react';
   
     const variants = {
       hidden: {
-        x: direction === 'right' ? 150 : -150,
+        y: -150, //: direction === 'right' ? 0 : -150,
         opacity: 0,
       },
       visible: {
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: { duration: 1 },
       },
