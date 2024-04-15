@@ -1,67 +1,45 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useAnimate } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Loader from './LoadingAnim';
 
-const LoadingPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const loadingRef = useRef(null);
-
-  const [scope, animate] = useAnimate();
-
-  const handleAnimate = async () => {
-    await animate(loadingRef, {x:50, y:50}, {duration: 10});
-  }
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (loadingRef.current) {
-        handleAnimate();
-      }
-    }, 0);
-  
-    return () => clearTimeout(timer);
-  }, []);
-  
-
-  const handleAnimationComplete = () => {
-    setIsLoading(false);
-  };
-
+const SplashPage = () => {
   return (
-    <AnimatePresence>
-      {isLoading && (
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, delay: 100 }}
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 40,
-            background: 'linear-gradient(to bottom right, #1A2E3B, #14242D)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: 'white',
-            fontSize: '3em',
-            fontFamily: 'Fredoka One', //to change
-            fontWeight: 'bold',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
-          }}
-          onAnimationComplete={handleAnimationComplete}
-        >
-          Bienvenue
-          <div ref={loadingRef} className='bg-black z-100 h-24 w-24 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'></div>
-        </motion.div>
-      )}
-      <div className='bg-black z-100 h-24 w-24'>
-
-      </div>
-    </AnimatePresence>
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0 }}
+      transition={{ duration: 3, delay: 3 }}
+      style={{
+        position: 'fixed',
+        zIndex: 40,
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column', // Ajout pour organiser les éléments en colonne
+        justifyContent: 'center',
+        alignItems: 'center',
+        background: 'linear-gradient(to bottom right, #1A2E3B, #14242D)',
+        color: '#FFF',
+        fontSize: '2rem',
+      }}
+    >
+      <motion.div
+        initial={{ scale: 1 }}
+        animate={{ scale: 0 }}
+        transition={{ delay: 3, duration: 3 }}
+        style={{
+          // width: '200px',
+          // height: '200px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        Welcome!
+        <Loader />
+      </motion.div>
+      
+    </motion.div>
   );
 };
 
-export default LoadingPage;
+export default SplashPage;

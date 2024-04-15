@@ -13,7 +13,7 @@ import { useRef } from 'react';
             id: "epitech"
         },
         {
-            heading: "Stage",
+            heading: "Versity",
             subHeading: "2021",
             direction: "left",
             id: "stagepapa"
@@ -43,7 +43,7 @@ import { useRef } from 'react';
           id: "Hackathonhack"
         },
         {
-            heading: "Stage",
+            heading: "Thales",
             subHeading: "2023",
             direction: "right",
             id: "stagethales"

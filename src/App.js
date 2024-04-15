@@ -5,8 +5,9 @@ import Projet from './component/TimelineComponent'
 import Parcours from './Pages/Timeline'
 
 
-const App = () => {
 
+
+const App = () => {
   return (
     <div className="App">
       <Loading />  
