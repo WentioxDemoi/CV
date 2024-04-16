@@ -6,7 +6,7 @@ import CPP from '../Assets/C++.png'
 import CSharp from '../Assets/CSharp.png'
 import C from '../Assets/C.png'
 import Swift from '../Assets/Swift.png'
-import Java from '../Assets/Java.png'
+import JavaScript from '../Assets/JavaScript.png'
 import Tailwind from '../Assets/Tailwind.png'
 import ReactJS from '../Assets/React.png'
 import Angular from '../Assets/Angular.png'
@@ -118,10 +118,10 @@ export default function Home() {
 
                   <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
                     <Slide>
-                      <img className="h-12 w-12 object-contain" src={Java} alt="GitHub Logo" />
+                      <img className="h-12 w-12 object-contain" src={JavaScript} alt="GitHub Logo" />
                       </Slide>
                       <Slide>
-                      <p className="text-center mt-4">Java</p>
+                      <p className="text-center mt-4">JavaScript</p>
                     </Slide>
                   </div>
 

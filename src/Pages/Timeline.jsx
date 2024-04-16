@@ -57,6 +57,8 @@ import { useRef } from 'react';
     ]
     return (
         <div className="flex flex-col gap-y-3 w-full my-4">
+          <h2 className="text-xl font-bold mt-18 text-center">Timeline</h2>
+          <h5 className="text-xs font-bold mt-18 mb-16 text-center">Les cartes sont cliquables !</h5>
             <div id="Circle" className="bg-gradient-to-r from-gray-600 to-teal-100 rounded-full w-4 h-4 mx-auto"></div>
             {events.map((event, key) => (
   <Fragment key={key}>
