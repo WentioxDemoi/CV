@@ -13,6 +13,7 @@ import Angular from '../Assets/Angular.png'
 import Spring from '../Assets/Spring.png'
 import Docker from '../Assets/Docker.png'
 import { motion } from 'framer-motion';
+import { Reveal } from '../component/Reveal.tsx';
 
 export default function Home() {
 
@@ -28,11 +29,15 @@ export default function Home() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
-              <h1 className="mt-28 text-2xl font-bold tracking-tight text-gray-900">Hello World !</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+            <div className="mt-28 space-y-10 lg:max-w-lg">
+              <Reveal>
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900">Hello World !</h1>
+              </Reveal>
+              <Reveal>
+              <p className=" text-xl leading-8 text-gray-700">
                 Je m'appelle <strong><span className="font-bold">Rémi Desbordes</span></strong>
               </p>
+              </Reveal>
             </div>
             </div>
           </div>
@@ -41,22 +46,28 @@ export default function Home() {
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                
-                <p className="mt-6 text-xl leading-8 text-gray-700">
+              <div className="space-y-6 max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <Reveal>
+                <p className="text-xl leading-8 text-gray-700">
                 Si vous êtes là, c'est que vous avez cliqué sur le lien présent sur mon CV et que vous voulez en savoir plus concernant mon profil.
                 </p>
-
-                <p className="mt-6 text-xl leading-8 text-gray-700">
+                </Reveal>
+                <Reveal>
+                <p className="text-xl leading-8 text-gray-700">
                 Vous trouverez ici tout plein d’informations sur ce que j’ai fait durant mon cursus
                 </p>
-                <p className="mt-6 text-xl leading-8 text-gray-700">
+                </Reveal>
+                <Reveal>
+                <p className="text-xl leading-8 text-gray-700">
                   BLABLAbla BLABLAblaBLABLAblaBLABLAb laBLABLAblaBLABL AblaBLABLAblaBLABLAblaBLABLAbla BLABLAblaBLABLA blaBLABLAbla
                 </p>
-                <p className="mt-6 text-xl leading-8 text-gray-700">
+                </Reveal>
+                <Reveal>
+                <p className="text-xl leading-8 text-gray-700">
                 BLABLAbla BLABLAblaBLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABL AblaBLABLAblaBLABLAb laBLABLAbl aBLABLAb laBLABLAbla
                 </p>
-                <h2 className="text-xl font-bold mt-12 mb-4 text-center">Languages</h2>
+                </Reveal>
+                  <h2 className="text-xl font-bold mt-12 mb-4 text-center">Languages</h2>
                 <div className="flex flex-wrap justify-between mt-10">
       <motion.div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10" variants={variants} initial="hidden" animate="visible">
         <motion.img className="h-12 w-12 object-contain" src={C} alt="GitHub Logo" />
