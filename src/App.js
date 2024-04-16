@@ -20,19 +20,16 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <Reveal>
-        <h1>okokokokok</h1>
-      </Reveal> */}
-      <Loading /> 
+      <Loading />
       {showContent && (
         <>
-          <Logo/>
-          <Presentation/>
-          <Parcours/>
-          <Projet/> 
+          <Logo />
+          <Presentation />
+          <Parcours />
+          <Projet />
         </>
       )}
-      
+
     </div>
   );
 };
