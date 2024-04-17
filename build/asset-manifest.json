@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.bc90d9ff.css",
-    "main.js": "/CV/static/js/main.d750c2d6.js",
+    "main.css": "/CV/static/css/main.a4a49293.css",
+    "main.js": "/CV/static/js/main.1e680670.js",
     "static/js/453.20952338.chunk.js": "/CV/static/js/453.20952338.chunk.js",
     "static/media/React.png": "/CV/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/Python.png": "/CV/static/media/Python.82efb64f8698a267f8bf.png",
     "static/media/Spring.png": "/CV/static/media/Spring.1a753d3a09a8df3cec6c.png",
-    "static/media/Java.png": "/CV/static/media/Java.ec4d37974794a1080e67.png",
     "static/media/Qrcode.png": "/CV/static/media/Qrcode.0cb96b4d9c1d3b9ea70a.png",
     "static/media/Swift.png": "/CV/static/media/Swift.a4ba8e294979e0d4c61d.png",
     "static/media/Docker.png": "/CV/static/media/Docker.1bfc908921144d08d154.png",
@@ -16,13 +15,14 @@
     "static/media/Tailwind.png": "/CV/static/media/Tailwind.9bff1085bc1e2a0cff89.png",
     "static/media/C.png": "/CV/static/media/C.bbbbbabc8c191bfb99bf.png",
     "static/media/Signature White.png": "/CV/static/media/Signature White.71b1a1c3f57642d825c3.png",
+    "static/media/JavaScript.png": "/CV/static/media/JavaScript.266bd9fb2663dcc057b4.png",
     "index.html": "/CV/index.html",
-    "main.bc90d9ff.css.map": "/CV/static/css/main.bc90d9ff.css.map",
-    "main.d750c2d6.js.map": "/CV/static/js/main.d750c2d6.js.map",
+    "main.a4a49293.css.map": "/CV/static/css/main.a4a49293.css.map",
+    "main.1e680670.js.map": "/CV/static/js/main.1e680670.js.map",
     "453.20952338.chunk.js.map": "/CV/static/js/453.20952338.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc90d9ff.css",
-    "static/js/main.d750c2d6.js"
+    "static/css/main.a4a49293.css",
+    "static/js/main.1e680670.js"
   ]
 }
