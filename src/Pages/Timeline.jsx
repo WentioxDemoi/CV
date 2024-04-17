@@ -56,7 +56,7 @@ import { useRef } from 'react';
         },
     ]
     return (
-        <div className="flex flex-col gap-y-3 w-full my-4">
+        <div className="flex flex-col gap-y-3 w-full my-4 z-50">
           <h2 className="text-xl font-bold mt-18 text-center">Timeline</h2>
           <h5 className="text-xs font-bold mt-18 mb-16 text-center">Les cartes sont cliquables !</h5>
             <div id="Circle" className="bg-gradient-to-r from-gray-600 to-teal-100 rounded-full w-4 h-4 mx-auto"></div>
@@ -86,12 +86,12 @@ import { useRef } from 'react';
 
   const Circle = () => {
     return (
-        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-full w-4 h-4 mx-auto"></div>
+        <div className="bg-gradient-to-r from-gray-600 to-teal-500 rounded-full w-4 h-4 mx-auto bg-opacity-100 bg-white"></div>
     )
   } 
   const Pillar = () => {
     return (
-        <div className="bg-gradient-to-b from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-28 mx-auto"></div>
+        <div className="bg-gradient-to-b from-gray-600 to-teal-500 rounded-t-full rounded-b-full w-2 h-28 mx-auto bg-opacity-100 bg-white"></div>
     )
   } 
   
@@ -130,7 +130,7 @@ import { useRef } from 'react';
         //className="transition duration-500 ease-in-out trasition-transform hover:-translate-y-10 hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
         onClick={() => handleClick(id)}
       >
-        <div className="transition duration-200 ease-in-out trasition-transform hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1">
+        <div className="bg-opacity-100 z-50  bg-white transition duration-200 ease-in-out trasition-transform hover:-translate-y-2  hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1">
           <div id={heading} className="text-blue-700 font-bold text-lg border-b">{heading}</div>
           <div className="test-sm text-gray-700">{subHeading}</div>
         </div>

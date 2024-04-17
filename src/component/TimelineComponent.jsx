@@ -3,6 +3,7 @@ import QRcode from '../Assets/Qrcode.png'
 import { Reveal } from './Reveal.tsx';
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 const includedFeaturesEpitech = [
     'Compétences techniques solides',
@@ -13,6 +14,8 @@ const includedFeaturesEpitech = [
 
 export default function Projets() {
 
+    const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+
     const ref1 = useRef(null)
     const ref2 = useRef(null)
     const ref3 = useRef(null)
@@ -22,15 +25,25 @@ export default function Projets() {
     const ref7 = useRef(null)
     const ref8 = useRef(null)
 
+    let x;
+    let y;
 
-    const { scrollYProgress: scrollYProgress1 } = useScroll({ target: ref1, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress2 } = useScroll({ target: ref2, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress3 } = useScroll({ target: ref3, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress4 } = useScroll({ target: ref4, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress5 } = useScroll({ target: ref5, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress6 } = useScroll({ target: ref6, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress7 } = useScroll({ target: ref7, offset: ["0 1", "1.33 1"], });
-    const { scrollYProgress: scrollYProgress8 } = useScroll({ target: ref8, offset: ["0 1", "1.33 1"], });
+    if (isMobile) {
+        x = "0 2";
+        y = "1 1.9"
+    } else {
+        x = "0 1";
+        y = "1.33 1"
+    }
+
+    const { scrollYProgress: scrollYProgress1 } = useScroll({ target: ref1, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress2 } = useScroll({ target: ref2, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress3 } = useScroll({ target: ref3, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress4 } = useScroll({ target: ref4, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress5 } = useScroll({ target: ref5, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress6 } = useScroll({ target: ref6, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress7 } = useScroll({ target: ref7, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress8 } = useScroll({ target: ref8, offset: [x, y], });
 
     const scaleProgress1 = useTransform(scrollYProgress1, [0, 1], [0.5, 1]);
     const scaleProgress2 = useTransform(scrollYProgress2, [0, 1], [0.5, 1]);
@@ -59,18 +72,18 @@ export default function Projets() {
     return (
         <div>
 
-            <div className="bg-white">
+            <div>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <h2 className="text-3xl font-bold mt-40 mb-4 text-center">L'école</h2>
                     <motion.div
                         ref={ref1}
                         style={{
-                            scale: scaleProgress1,
+                            scale: scaleProgress1, //scrollYProgress1,//
                             opacity: scrollYProgress1
                         }}
                         id="epitech"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <Reveal>
                                     <h3 className="text-2xl font-bold tracking-tight text-gray-900">C'est quoi Epitech ?</h3>
@@ -140,7 +153,7 @@ export default function Projets() {
                         }}
                         id="unical"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Unical | Erasmus</h3>
                                 <Reveal>
@@ -206,7 +219,7 @@ export default function Projets() {
                         }}
                         id="stagepapa"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Les Agences de Papa | Versity</h3>
                                 <Reveal>
@@ -265,7 +278,7 @@ export default function Projets() {
                         }}
                         id="stagethales"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Thales Alenia Space</h3>
                                 <h3 className='text-xl'>3 Avril 2023 - 31 Août 2023 [5 mois]</h3>
@@ -331,7 +344,7 @@ export default function Projets() {
                         }}
                         id="Hackathonactin"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">ActinSpace</h3>
                                 <Reveal>
@@ -400,7 +413,7 @@ export default function Projets() {
                         }}
                         id="Hackathonmuseo"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Muséomix</h3>
                                 <Reveal>
@@ -467,7 +480,7 @@ export default function Projets() {
                         }}
                         id="Hackathonhack"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Hack4inclusion</h3>
                                 <Reveal>
@@ -536,7 +549,7 @@ export default function Projets() {
                         }}
                         id="Hackathonstarton"
                     >
-                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Starton Online</h3>
                                 <Reveal>

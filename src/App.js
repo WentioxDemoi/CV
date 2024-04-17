@@ -4,6 +4,8 @@ import Logo from './Pages/Logo'
 import Presentation from './Pages/Home'
 import Projet from './component/TimelineComponent'
 import Parcours from './Pages/Timeline'
+import Particlesbg from './component/Particles';
+import './App.css'
 
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
       <Loading />
       {showContent && (
         <>
+          <Particlesbg id="particles"/>
           <Logo />
           <Presentation />
           <Parcours />
