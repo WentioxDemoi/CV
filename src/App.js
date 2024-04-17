@@ -1,5 +1,4 @@
 import Loading from './component/LoadingScreen'
-import { Reveal } from './component/Reveal.tsx'
 import React, { useState, useEffect } from 'react';
 import Logo from './Pages/Logo'
 import Presentation from './Pages/Home'

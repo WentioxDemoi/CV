@@ -13,19 +13,19 @@ import Angular from '../Assets/Angular.png'
 import Spring from '../Assets/Spring.png'
 import Docker from '../Assets/Docker.png'
 import { Reveal } from '../component/Reveal.tsx';
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react';
+//import { motion, useInView } from 'framer-motion'
+// import { useRef } from 'react';
 import { Slide } from '../component/Slide.tsx'
 
 export default function Home() {
 
-  const variants = {
-    hidden: { opacity: 0, x: 150 },
-    visible: { opacity: 1, x: 0, transition: { delay: 1.5 } }
-  };
+  // const variants = {
+  //   hidden: { opacity: 0, x: 150 },
+  //   visible: { opacity: 1, x: 0, transition: { delay: 1.5 } }
+  // };
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { threshold: 0.5 });
+  // const ref = useRef(null);
+  //const isInView = useInView(ref, { threshold: 0.5 });
 
 
   return (
