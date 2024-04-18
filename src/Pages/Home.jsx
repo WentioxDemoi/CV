@@ -54,22 +54,22 @@ export default function Home() {
               <div className="space-y-6 max-w-xl text-lg lg:text-xl text-gray-700 lg:max-w-lg">
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                    Si vous êtes là, c'est que vous avez cliqué sur le lien présent sur mon CV et que vous voulez en savoir plus concernant mon profil.
+                  Étudiant en 4ème année à Epitech, j'ai choisi cette école pour sa pédagogie, les projets qu'on y mène et le métier qu'on y apprend.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                    Vous trouverez ici tout plein d’informations sur ce que j’ai fait durant mon cursus
+                  Après avoir découvert, dans le domaine de l'informatique, l'administration système et réseau et le développement logiciel, je suis à l'écoute de nouvelles opportunités.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                    BLABLAbla BLABLAblaBLABLAblaBLABLAb laBLABLAblaBLABL AblaBLABLAblaBLABLAblaBLABLAbla BLABLAblaBLABLA blaBLABLAbla
+                  Je suis actuellement à la recherche d'un part-time (Lundi, Mardi et Mercredi) du 02/09/2024 au 02/03/2025 et/ou d'un stage du 03/03/2025 au 01/08/2025.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                    BLABLAbla BLABLAblaBLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABL AblaBLABLAblaBLABLAb laBLABLAbl aBLABLAb laBLABLAbla
+                  Vous trouverez plus d'informations ci-dessous.
                   </p>
                 </Reveal>
                 <h2 className="font-bold pt-12 pb-4 text-center">Languages</h2>

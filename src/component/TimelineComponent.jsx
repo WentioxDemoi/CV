@@ -4,6 +4,7 @@ import { Reveal } from './Reveal.tsx';
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import MailComponent from './MailComponent.jsx'
 
 const includedFeaturesEpitech = [
     'Compétences techniques solides',
@@ -386,7 +387,7 @@ export default function Projets() {
                                             rel="noreferrer"
                                             className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                         >
-                                            En savoir +
+                                            Article
                                         </a>
                                         <button
                                             onClick={handleClick}
@@ -436,15 +437,11 @@ export default function Projets() {
                                             rel="noreferrer"
                                             className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                         >
-                                            En savoir +
+                                            Article
                                         </a>
-                                        <img src={QRcode} className="w-20 mx-4 mt-5" alt=""></img>
-                                        <a
-                                            href="https://wentioxdemoi.github.io/museomix/index_welcome.html"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                        >Chi-Plouf</a>
+                                        <img src={QRcode} className="w-20 mx-4 mt-5 items-center justify-center" alt=""></img>
+                                        
+                                        
                                         <button
                                             onClick={handleClick}
                                             className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -569,41 +566,31 @@ export default function Projets() {
                         }}
                         id="Hackathonstarton"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
-                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Starton Online</h3>
+                        <div className="mx-auto mt-16 max-w-2xl rounded-3xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none text-lg lg:text-xl">
+                            <div className="space-y-6  p-8 sm:p-10 lg:flex-auto">
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Petits ajouts </h3>
                                 <Reveal>
-                                    <p className="mt-6 text-base leading-7 text-gray-600">
-                                        Pour ce hackathon basé sur la blockchain Starton, nous avons décidé d'inventer Get-In, une application pas comme les autres « walking reward apps ».                             </p>
+                                    <p className="mt-6 leading-7 text-gray-600">
+                                        Disponible, polyvalent et motivé, je suis à l'écoute de tout type d'opportunités dans le domaine du développement informatique.                             </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className="text-base leading-7 text-gray-600">
-                                        Get-In vise à résoudre le problème du manque d'exercice physique chez les jeunes comme chez les adultes en proposant une plateforme moderne mettant en commun les amoureux d'un sport, sans partenaires.                            </p>
+                                    <p className=" leading-7 text-gray-600">
+                                        Toutes les technologies que je connais ne sont pas mentionnées, n'hésitez pas à m'envoyer un message via le formulaire ci-dessous.                            </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className="text-base leading-7 text-gray-600">
-                                        Notre application vise à rémunérer en « GetCoins » les personnes se mettant au sport, à connecter d'autres personnes voulant exercer ce même sport en groupe et à proposer des événements/tournois payants en termes de GetCoins.                            </p>
+                                    <p className="leading-7 text-gray-600">
+                                        Vous pourrez trouver quelques gros projets réalisés lors de mes études à Epitech, en cliquant sur le bouton ci-dessous.                         </p>
                                 </Reveal>
-                            </div>
-                            <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
-                                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
-                                    <div className="mx-auto max-w-xs px-8">
-                                        <a
-                                            href="https://starton.notion.site/November-Hackathon-21-22-23-24-Final-28-November-2a0f9f1db8554d789fdddcd6291d2c3f"
+                                <div className="p-2 w-full flex justify-center">
+                                <a
+                                            href="https://github.com/WentioxDemoi/Epitech"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                         >
-                                            En savoir +
+                                            Github
                                         </a>
-                                        <button
-                                            onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                        >
-                                            Timeline
-                                        </button>
-                                    </div>
-                                </div>
+                                        </div>
                             </div>
                         </div>
                     </motion.div>

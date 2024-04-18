@@ -6,6 +6,7 @@ import Projet from './component/TimelineComponent'
 import Parcours from './Pages/Timeline'
 import Particlesbg from './component/Particles';
 import './App.css'
+import MailComponent from './component/MailComponent';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Presentation />
           <Parcours />
           <Projet />
+          <MailComponent></MailComponent>
         </>
       )}
 
