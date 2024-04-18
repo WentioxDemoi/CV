@@ -24,6 +24,7 @@ export default function Projets() {
     const ref6 = useRef(null)
     const ref7 = useRef(null)
     const ref8 = useRef(null)
+    const ref9 = useRef(null)
 
     let x;
     let y;
@@ -44,6 +45,7 @@ export default function Projets() {
     const { scrollYProgress: scrollYProgress6 } = useScroll({ target: ref6, offset: [x, y], });
     const { scrollYProgress: scrollYProgress7 } = useScroll({ target: ref7, offset: [x, y], });
     const { scrollYProgress: scrollYProgress8 } = useScroll({ target: ref8, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress9 } = useScroll({ target: ref1, offset: [x, y], });
 
     const scaleProgress1 = useTransform(scrollYProgress1, [0, 1], [0.5, 1]);
     const scaleProgress2 = useTransform(scrollYProgress2, [0, 1], [0.5, 1]);
@@ -53,6 +55,7 @@ export default function Projets() {
     const scaleProgress6 = useTransform(scrollYProgress6, [0, 1], [0.5, 1]);
     const scaleProgress7 = useTransform(scrollYProgress7, [0, 1], [0.5, 1]);
     const scaleProgress8 = useTransform(scrollYProgress8, [0, 1], [0.5, 1]);
+    const scaleProgress9 = useTransform(scrollYProgress9, [0, 1], [0.5, 1]);
 
 
     // const { scrollYProgress } = useScroll({
@@ -73,7 +76,7 @@ export default function Projets() {
         <div>
 
             <div>
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 text-xl lg:text-2xl">
                     <h2 className="text-3xl font-bold mt-40 mb-4 text-center">L'école</h2>
                     <motion.div
                         ref={ref1}
@@ -220,8 +223,9 @@ export default function Projets() {
                         id="stagepapa"
                     >
                         <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                            <div className="p-8 sm:p-10 lg:flex-autoo">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Les Agences de Papa | Versity</h3>
+                                <h3 className='text-xl'>1 Juillet 2021 - 31 Décembre 2021 [6 mois]</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
                                         En tant que stagiaire dans l'équipe IT tout juste créée, j'ai eu l'occasion de participer au développement de ce service.
@@ -244,7 +248,7 @@ export default function Projets() {
                                 </Reveal>
                                 <Reveal>
                                     <p className='text-base leading-7 text-gray-600'>
-                                        https://www.linkedin.com/in/bhupinder-kunwar-6606261/
+                                        www.linkedin.com/in/bhupinder-kunwar-6606261/
                                     </p>
                                 </Reveal>
                             </div>
@@ -346,7 +350,7 @@ export default function Projets() {
                     >
                         <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
-                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">ActinSpace</h3>
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">ActinSpace | Première place</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
                                         Dans ce hackathon, nous avons eu l'occasion de créer un projet jugé "original" par le jury : Space Care Taker.
@@ -372,16 +376,6 @@ export default function Projets() {
                                         Nous avons aussi eu l'occasion d'être encadrés sur Space Care Taker par Candace Johnson (<a className="text-blue-500" href="https://www.linkedin.com/in/candace-johnson-2966054a/?originalSubdomain=fr" target="_blank" rel="noreferrer">Linkedin</a>) et Marilyn Davison (<a className="text-blue-500" href="https://www.linkedin.com/in/marilyndavison/" target="_blank" rel="noreferrer">Linkedin</a>).
                                     </p>
                                 </Reveal>
-                                <div className="mt-10 flex items-center gap-x-4">
-                                    <h4 className="flex-none text-sm font-semibold leading-6 text-gray-600">Prix remporté</h4>
-                                    <div className="h-px flex-auto bg-gray-100" />
-                                </div>
-                                <ul className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-                                    <li className="flex gap-x-3">
-                                        <CheckIcon className="h-6 w-5 flex-none text-blue-700" aria-hidden="true" />
-                                        Première place
-                                    </li>
-                                </ul>
                             </div>
                             <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
                                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
@@ -415,7 +409,7 @@ export default function Projets() {
                     >
                         <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
-                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Muséomix</h3>
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Muséomix | Première place, coup de coeur Nice Matin</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
                                         Dans ce hackathon sur le thème de l'accessibilité dans les musées, nous avons eu l’occasion de nous attaquer à un gros enjeu pour les musées : les enfants.                            </p>
@@ -432,16 +426,6 @@ export default function Projets() {
                                     <p className="text-base leading-7 text-gray-600">
                                         Chi-plouf est alors né. Un simple QR code à scanner pour les parents, une histoire à suivre pour les enfants et la possibilité d’accéder à ces histoires de n’importe où et n’importe quand.                            </p>
                                 </Reveal>
-                                <div className="mt-10 flex items-center gap-x-4">
-                                    <h4 className="flex-none text-sm font-semibold leading-6 text-gray-600">Prix remporté</h4>
-                                    <div className="h-px flex-auto bg-gray-100" />
-                                </div>
-                                <ul className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-                                    <li className="flex gap-x-3">
-                                        <CheckIcon className="h-6 w-5 flex-none text-blue-700" aria-hidden="true" />
-                                        Première place, coup de coeur Nice Matin
-                                    </li>
-                                </ul>
                             </div>
                             <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
                                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
@@ -482,7 +466,7 @@ export default function Projets() {
                     >
                         <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
-                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Hack4inclusion</h3>
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Hack4inclusion | Prix de l'inclusion</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
                                         Dans ce hackathon sur le thème de l’inclusion, nous nous sommes penchés sur la question des enfants malades.
@@ -508,16 +492,6 @@ export default function Projets() {
                                         Notre jeu se déroule dans un monde imaginaire où notre joueur doit déverrouiller des quêtes grâce à des clés. Les clés sont réparties en fragments dans notre univers et le joueur doit les collecter en résolvant de petits problèmes informatiques.
                                     </p>
                                 </Reveal>
-                                <div className="mt-10 flex items-center gap-x-4">
-                                    <h4 className="flex-none text-sm font-semibold leading-6 text-gray-600">Prix remporté</h4>
-                                    <div className="h-px flex-auto bg-gray-100" />
-                                </div>
-                                <ul className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-                                    <li className="flex gap-x-3">
-                                        <CheckIcon className="h-6 w-5 flex-none text-blue-700" aria-hidden="true" />
-                                        Prix de l'inclusion
-                                    </li>
-                                </ul>
                             </div>
                             <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
                                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
@@ -546,6 +520,52 @@ export default function Projets() {
                         style={{
                             scale: scaleProgress8,
                             opacity: scrollYProgress8
+                        }}
+                        id="Hackathonstarton"
+                    >
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div className="p-8 sm:p-10 lg:flex-auto">
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Starton Online</h3>
+                                <Reveal>
+                                    <p className="mt-6 text-base leading-7 text-gray-600">
+                                        Pour ce hackathon basé sur la blockchain Starton, nous avons décidé d'inventer Get-In, une application pas comme les autres « walking reward apps ».                             </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        Get-In vise à résoudre le problème du manque d'exercice physique chez les jeunes comme chez les adultes en proposant une plateforme moderne mettant en commun les amoureux d'un sport, sans partenaires.                            </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        Notre application vise à rémunérer en « GetCoins » les personnes se mettant au sport, à connecter d'autres personnes voulant exercer ce même sport en groupe et à proposer des événements/tournois payants en termes de GetCoins.                            </p>
+                                </Reveal>
+                            </div>
+                            <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
+                                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
+                                    <div className="mx-auto max-w-xs px-8">
+                                        <a
+                                            href="https://starton.notion.site/November-Hackathon-21-22-23-24-Final-28-November-2a0f9f1db8554d789fdddcd6291d2c3f"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                        >
+                                            En savoir +
+                                        </a>
+                                        <button
+                                            onClick={handleClick}
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                        >
+                                            Timeline
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        ref={ref9}
+                        style={{
+                            scale: scaleProgress9,
+                            opacity: scrollYProgress9
                         }}
                         id="Hackathonstarton"
                     >

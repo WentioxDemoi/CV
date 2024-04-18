@@ -13,7 +13,7 @@ import { useRef } from 'react';
             id: "epitech"
         },
         {
-            heading: "Versity",
+            heading: "Stage Versity",
             subHeading: "2021",
             direction: "left",
             id: "stagepapa"
@@ -43,7 +43,7 @@ import { useRef } from 'react';
           id: "Hackathonhack"
         },
         {
-            heading: "Thales",
+            heading: "Stage Thales",
             subHeading: "2023",
             direction: "right",
             id: "stagethales"
@@ -56,8 +56,8 @@ import { useRef } from 'react';
         },
     ]
     return (
-        <div className="flex flex-col gap-y-3 w-full my-4 z-50">
-          <h2 className="text-xl font-bold mt-18 text-center">Timeline</h2>
+        <div className="text-l lg:text-2xl flex flex-col gap-y-3 w-full my-4 z-50">
+          <h2 className="text-3xl font-bold mt-18 text-center">Timeline</h2>
           <h5 className="text-xs font-bold mt-18 mb-16 text-center">Les cartes sont cliquables !</h5>
             <div id="Circle" className="bg-gradient-to-r from-gray-600 to-teal-100 rounded-full w-4 h-4 mx-auto"></div>
             {events.map((event, key) => (
@@ -131,8 +131,8 @@ import { useRef } from 'react';
         onClick={() => handleClick(id)}
       >
         <div className="bg-opacity-100 z-50  bg-white transition duration-200 ease-in-out trasition-transform hover:-translate-y-2  hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1">
-          <div id={heading} className="text-blue-700 font-bold text-lg border-b">{heading}</div>
-          <div className="test-sm text-gray-700">{subHeading}</div>
+          <div id={heading} className="text-base text-blue-700 font-bold border-b">{heading}</div>
+          <div className="text-sm text-gray-700">{subHeading}</div>
         </div>
       </motion.div>
     );

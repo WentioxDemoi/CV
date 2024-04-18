@@ -36,10 +36,10 @@ export default function Home() {
             <div className="lg:pr-4">
               <div className="mt-28 space-y-10 lg:max-w-lg">
                 <Reveal>
-                  <h1 className="text-2xl font-bold tracking-tight text-gray-900">Hello World !</h1>
+                  <h1 className="text-center font-bold tracking-tight text-gray-900 text-lg lg:text-xl">Hello World !</h1>
                 </Reveal>
                 <Reveal>
-                  <p className=" text-xl leading-8 text-gray-700">
+                  <p className=" text-lg lg:text-xl leading-8 text-gray-700">
                     Je m'appelle <strong><span className="font-bold">Rémi Desbordes</span></strong>
                   </p>
                 </Reveal>
@@ -51,28 +51,28 @@ export default function Home() {
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="space-y-6 max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <div className="space-y-6 max-w-xl text-lg lg:text-xl text-gray-700 lg:max-w-lg">
                 <Reveal>
-                  <p className="text-xl leading-8 text-gray-700">
+                  <p className="leading-8 text-gray-700">
                     Si vous êtes là, c'est que vous avez cliqué sur le lien présent sur mon CV et que vous voulez en savoir plus concernant mon profil.
                   </p>
                 </Reveal>
                 <Reveal>
-                  <p className="text-xl leading-8 text-gray-700">
+                  <p className="leading-8 text-gray-700">
                     Vous trouverez ici tout plein d’informations sur ce que j’ai fait durant mon cursus
                   </p>
                 </Reveal>
                 <Reveal>
-                  <p className="text-xl leading-8 text-gray-700">
+                  <p className="leading-8 text-gray-700">
                     BLABLAbla BLABLAblaBLABLAblaBLABLAb laBLABLAblaBLABL AblaBLABLAblaBLABLAblaBLABLAbla BLABLAblaBLABLA blaBLABLAbla
                   </p>
                 </Reveal>
                 <Reveal>
-                  <p className="text-xl leading-8 text-gray-700">
+                  <p className="leading-8 text-gray-700">
                     BLABLAbla BLABLAblaBLABLAblaBLABLAblaBLA BLAblaBLABLAblaBLABL AblaBLABLAblaBLABLAb laBLABLAbl aBLABLAb laBLABLAbla
                   </p>
                 </Reveal>
-                <h2 className="text-xl font-bold pt-12 pb-4 text-center">Languages</h2>
+                <h2 className="font-bold pt-12 pb-4 text-center">Languages</h2>
                 <div className="flex flex-wrap justify-between mt-10">
 
                   <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/3 mb-4 lg:mb-0 mt-10">
@@ -136,7 +136,7 @@ export default function Home() {
                   </div>
 
                 </div>
-                <h2 className="text-xl font-bold pt-12 pb-4 text-center">Framework</h2>
+                <h2 className="font-bold pt-12 pb-4 text-center">Framework</h2>
 
                 <div className="flex flex-wrap justify-between mt-10">
                   <div className="flex flex-col items-center w-1/2 sm:w-1/2 lg:w-1/2 mb-4 lg:mb-0 mt-10">
@@ -190,7 +190,7 @@ export default function Home() {
                     <p className="text-center mt-4">Angular</p>
                   </div>
                 </div> */}
-                <h2 className="text-xl font-bold pt-12 pb-10 text-center">DevOPS</h2>
+                <h2 className="font-bold pt-12 pb-10 text-center">DevOPS</h2>
                 <div className="flex flex-wrap justify-between mt-0">
                   <div className="flex flex-col items-center justify-center w-full sm:w-full lg:w-full mb-4 lg:mb-0 mt-10">
                     <Slide>
