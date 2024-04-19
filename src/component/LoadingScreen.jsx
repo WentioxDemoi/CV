@@ -24,7 +24,7 @@ const LoadingPage = () => {
             width: '100%',
             height: '100%',
             zIndex: 9998,
-            background: 'linear-gradient(to bottom right, #1A2E3B, #14242D)',
+            background: 'linear-gradient(to bottom right, #4b5563, #4b5563)',
             display: 'flex',
             flexDirection: 'column', // Ajout pour organiser les éléments en colonne
             justifyContent: 'center',
@@ -37,7 +37,6 @@ const LoadingPage = () => {
           }}
           onAnimationComplete={handleAnimationComplete}
         >
-          {/* <div>Bienvenue</div> */}
           <Loader />
         </motion.div>
       )}
