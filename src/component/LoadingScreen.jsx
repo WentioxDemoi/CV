@@ -37,7 +37,7 @@ const LoadingPage = () => {
           }}
           onAnimationComplete={handleAnimationComplete}
         >
-          <div>Bienvenue</div>
+          {/* <div>Bienvenue</div> */}
           <Loader />
         </motion.div>
       )}

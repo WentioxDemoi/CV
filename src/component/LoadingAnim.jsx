@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const loaderVariant = {
   animateOne: {
-    x: [-20, 20],
-    y: [0, -30],
+    x: [-40, 40],
+    y: [0, -60],
     scale: [0.5, 1, 0.5],
     transition: {
       x: {
@@ -43,7 +43,7 @@ const Loader = () => {
   return (
     <div>
       <motion.div
-        className='bg-white z-100  h-2 w-2 rounded-full flex mt-20'
+        className='bg-white z-100  h-4 w-4 rounded-full flex mt-20'
         variants={loaderVariant}
         animate="animateOne"
         style={{ visibility: isVisible ? 'visible' : 'hidden' }}
