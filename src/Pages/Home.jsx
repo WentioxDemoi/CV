@@ -64,7 +64,7 @@ export default function Home() {
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Je suis actuellement à la recherche d'un part-time (Lundi, Mardi et Mercredi) du 02/09/2024 au 02/03/2025 et/ou d'un stage du 03/03/2025 au 01/08/2025.
+                  Je propose mes services en part-time (Lundi, Mardi et Mercredi) du 09/2024 au 03/2025, en stage de pré-embauche ou en CDI à partir du 03/2025.
                   </p>
                 </Reveal>
                 <Reveal>
