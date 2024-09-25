@@ -54,7 +54,7 @@ export default function Home() {
               <div className="space-y-6 max-w-xl text-lg lg:text-xl text-gray-700 lg:max-w-lg">
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Étudiant en 4ème année à Epitech, j'ai choisi cette école pour sa pédagogie, les projets qu'on y mène et le métier qu'on y apprend.
+                  Étudiant en 5ème année à Epitech, j'ai choisi cette école pour sa pédagogie, les projets qu'on y mène et le métier qu'on y apprend.
                   </p>
                 </Reveal>
                 <Reveal>
@@ -64,7 +64,7 @@ export default function Home() {
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Je propose mes services en part-time (Lundi, Mardi et Mercredi) du 09/2024 au 03/2025, en stage de pré-embauche ou en CDI à partir du 03/2025.
+                  Je propose mes services en stage de pré-embauche ou en CDI à partir de Mars 2025.
                   </p>
                 </Reveal>
                 <Reveal>
