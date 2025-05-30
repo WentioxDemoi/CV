@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhello_world=self.webpackChunkhello_world||[]).push([[39],{39:(n,e,t)=>{async function a(n){let e=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await n.addInteractor("particlesLinks",(async n=>{const{Linker:e}=await t.e(6118).then(t.bind(t,6118));return new e(n)}),e)}t.d(e,{loadLinksInteraction:()=>a})}}]);
-//# sourceMappingURL=39.e28864a6.chunk.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhello_world=self.webpackChunkhello_world||[]).push([[6864],{6864:(n,l,e)=>{async function i(n){let l=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{LinksPlugin:i}=await e.e(5033).then(e.bind(e,5033)),a=new i;await n.addPlugin(a,l)}e.d(l,{loadLinksPlugin:()=>i})}}]);
-//# sourceMappingURL=6864.2d4f3496.chunk.js.map
