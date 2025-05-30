@@ -40,7 +40,7 @@ export default function Home() {
                 </Reveal>
                 <Reveal>
                   <p className=" text-lg lg:text-xl leading-8 text-gray-700">
-                    Je m'appelle <strong><span className="font-bold">Rémi Desbordes</span></strong>
+                    My name is <strong><span className="font-bold">Rémi Desbordes</span></strong>
                   </p>
                 </Reveal>
               </div>
@@ -54,22 +54,22 @@ export default function Home() {
               <div className="space-y-6 max-w-xl text-lg lg:text-xl text-gray-700 lg:max-w-lg">
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Étudiant en 5ème année à Epitech, j'ai choisi cette école pour sa pédagogie, les projets qu'on y mène et le métier qu'on y apprend.
+                  I am currently in my fifth year of study and looking for my first job in the field of software development.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Après avoir découvert, dans le domaine de l'informatique, l'administration système et réseau et le développement logiciel, je suis à l'écoute de nouvelles opportunités.
+                  After discovering system and network administration as well as software development in the field of IT, I am open to new opportunities.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Je propose mes services en stage de pré-embauche ou en CDI à partir de Mars 2025.
+                  I am offering my services for a full-time position starting from September 2025.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  Vous trouverez plus d'informations ci-dessous.
+                  You will find more information below.
                   </p>
                 </Reveal>
                 <h2 className="font-bold pt-12 pb-4 text-center">Languages</h2>
