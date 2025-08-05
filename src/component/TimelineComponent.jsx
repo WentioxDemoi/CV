@@ -90,8 +90,8 @@ export default function Projets() {
                         }}
                         id="epitech"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <Reveal>
                                     <h3 className="text-2xl font-bold tracking-tight text-gray-900">What is Epitech?</h3>
                                 </Reveal>
@@ -137,13 +137,13 @@ export default function Projets() {
                                             href="https://www.epitech.eu/programme-grande-ecole-informatique/"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -160,8 +160,8 @@ export default function Projets() {
                         }}
                         id="unical"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Unical | Erasmus</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
@@ -202,13 +202,13 @@ export default function Projets() {
                                             href="https://www.unical.it"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -226,8 +226,8 @@ export default function Projets() {
                         }}
                         id="stagepapa"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-autoo">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-autoo project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Les Agences de Papa | Versity</h3>
                                 <h3 className='text-xl'>July 1, 2021 - December 31, 2021 [6 months]</h3>
                                 <Reveal>
@@ -263,13 +263,13 @@ export default function Projets() {
                                             href="https://versity.io/fr"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -286,8 +286,8 @@ export default function Projets() {
                         }}
                         id="stagethales"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Thales Alenia Space</h3>
                                 <h3 className='text-xl'>April 3, 2023 - August 31, 2023 [5 months]</h3>
                                 <Reveal>
@@ -328,13 +328,13 @@ export default function Projets() {
                                             href="https://www.thalesaleniaspace.com/fr"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -351,8 +351,8 @@ export default function Projets() {
                         }}
                         id="stagedms"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Thales DMS</h3>
                                 <h3 className='text-xl'>March 3, 2025 - September 2, 2025 [6 months]</h3>
                                 <Reveal>
@@ -380,6 +380,16 @@ export default function Projets() {
                                         sebastien.deries@thalesgroup.com
                                     </p>
                                 </Reveal>
+                                <Reveal>
+                                    <p className='mt-6 text-base leading-7 text-gray-600'>
+                                        Gss: Iannis Bennaceur
+                                    </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className='text-base leading-7 text-gray-600'>
+                                        iannis.bennaceur@thalesgroup.com
+                                    </p>
+                                </Reveal>
                             </div>
                             <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
                                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
@@ -388,13 +398,13 @@ export default function Projets() {
                                             href="https://www.thalesgroup.com/en/global/activities/defence/underwater-systems"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -412,8 +422,8 @@ export default function Projets() {
                         }}
                         id="Hackathonactin"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">ActinSpace | First place</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
@@ -432,12 +442,12 @@ export default function Projets() {
                                 </Reveal>
                                 <Reveal>
                                     <p className="text-base leading-7 text-gray-600">
-                                        After this victory, we had the opportunity to visit the clean rooms of Thales Alenia Space with Jean Horanieh (<a className="text-blue-500" href="https://www.linkedin.com/in/jean-horanieh-567783216/" target="_blank" rel="noreferrer">Linkedin</a>) and to discuss our project with Yves Durand (<a className="text-blue-500" href="https://www.linkedin.com/in/yves-durand-5a00b075/" target="_blank" rel="noreferrer">Linkedin</a>).
+                                        After this victory, we had the opportunity to visit the clean rooms of Thales Alenia Space with Jean Horanieh (<a className="text-blue-500 linkedin-link" href="https://www.linkedin.com/in/jean-horanieh-567783216/" target="_blank" rel="noreferrer">Linkedin</a>) and to discuss our project with Yves Durand (<a className="text-blue-500 linkedin-link" href="https://www.linkedin.com/in/yves-durand-5a00b075/" target="_blank" rel="noreferrer">Linkedin</a>).
                                     </p>
                                 </Reveal>
                                 <Reveal>
                                     <p className="text-base leading-7 text-gray-600">
-                                        We were also mentored on Space Care Taker by Candace Johnson (<a className="text-blue-500" href="https://www.linkedin.com/in/candace-johnson-2966054a/?originalSubdomain=fr" target="_blank" rel="noreferrer">Linkedin</a>) and Marilyn Davison (<a className="text-blue-500" href="https://www.linkedin.com/in/marilyndavison/" target="_blank" rel="noreferrer">Linkedin</a>).
+                                        We were also mentored on Space Care Taker by Candace Johnson (<a className="text-blue-500 linkedin-link" href="https://www.linkedin.com/in/candace-johnson-2966054a/?originalSubdomain=fr" target="_blank" rel="noreferrer">Linkedin</a>) and Marilyn Davison (<a className="text-blue-500 linkedin-link" href="https://www.linkedin.com/in/marilyndavison/" target="_blank" rel="noreferrer">Linkedin</a>).
                                     </p>
                                 </Reveal>
                             </div>
@@ -448,13 +458,13 @@ export default function Projets() {
                                             href="https://www.petitesaffiches.fr/actualites,069/tech,080/spacecaretaker-laureat-de-la-5e,26422.html"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Article
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -471,8 +481,8 @@ export default function Projets() {
                         }}
                         id="Hackathonmuseo"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Muséomix | First place, Nice Matin favorite</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
@@ -502,7 +512,7 @@ export default function Projets() {
                                             href="https://www.nicematin.com/culture/chiplouf-le-nouveau-petit-guide-virtuel-qui-fait-decouvrir-les-secrets-du-musee-des-arts-asiatiques-de-nice-aux-enfants-807484"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Article
                                         </a>
@@ -511,7 +521,7 @@ export default function Projets() {
                                         
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -528,8 +538,8 @@ export default function Projets() {
                         }}
                         id="Hackathonhack"
                     >
-                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className="p-8 sm:p-10 lg:flex-auto">
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">Hack4inclusion | Inclusion Award</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
@@ -564,13 +574,13 @@ export default function Projets() {
                                             href="https://what06.fr/hackathon-inclusion-2023/"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Learn more
                                         </a>
                                         <button
                                             onClick={handleClick}
-                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Timeline
                                         </button>
@@ -610,7 +620,7 @@ export default function Projets() {
                                             href="https://github.com/WentioxDemoi/Epitech"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="block rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="block rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
                                         >
                                             Github
                                         </a>

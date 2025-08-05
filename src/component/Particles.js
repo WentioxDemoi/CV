@@ -41,11 +41,11 @@ const ParticlesComponent = (props) => {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "repulse",
           },
           onHover: {
-            enable: true,
+            enable: false,
             mode: 'grab',
           },
         },
@@ -61,7 +61,7 @@ const ParticlesComponent = (props) => {
       },
       particles: {
 		zIndex: {
-			value: 0, // ou une autre valeur inférieure au z-index de l'élément que vous voulez garder au-dessus
+			value: -10, // ou une autre valeur inférieure au z-index de l'élément que vous voulez garder au-dessus
 			opacityRate: 1,
 			sizeRate: 1,
 			velocityRate: 1,

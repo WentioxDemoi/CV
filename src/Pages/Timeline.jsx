@@ -135,8 +135,10 @@ import { useRef } from 'react';
         variants={variants}
         //className="transition duration-500 ease-in-out trasition-transform hover:-translate-y-10 hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4"
         onClick={() => handleClick(id)}
+        style={{ position: "relative", zIndex: 1 }}
+        className="timeline-card"
       >
-        <div className="bg-opacity-100 z-50  bg-white transition duration-200 ease-in-out trasition-transform hover:-translate-y-2  hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1">
+        <div className="bg-opacity-100 bg-white transition duration-200 ease-in-out trasition-transform hover:-translate-y-2  hover:shadow-2xl hover:bg-gray-200 flex flex-col gap-y-2 border shadow-md rounded-xl p-4 hover:rotate-1 cursor-pointer">
           <div id={heading} className="text-base text-blue-700 font-bold border-b">{heading}</div>
           <div className="text-sm text-gray-700">{subHeading}</div>
         </div>

@@ -46,7 +46,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center lg:sticky lg:top-1/3 lg:col-start-2 lg:row-span-5 lg:row-start-1 lg:overflow-hidden lg:pl-[-5%] lg:pb-[17%]">
+          <div className="flex items-center justify-center lg:sticky lg:top-1/3 lg:col-start-2 lg:row-span-5 lg:row-start-1 lg:overflow-hidden lg:pl-[-5%] lg:pb-[17%] z-50">
             <img className="flex w-[20rem] items-center justify-center max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10" src={Photo} alt="" />
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

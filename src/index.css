@@ -20,3 +20,63 @@
     width: 100%;
     position: fixed;
   }
+
+/* Styles pour améliorer l'interactivité */
+button, a {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.motion-div {
+  position: relative;
+  z-index: 1;
+}
+
+/* S'assurer que les cartes de timeline sont cliquables */
+.timeline-card {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+/* Styles spécifiques pour les boutons de timeline */
+.timeline-button {
+  position: relative !important;
+  z-index: 15 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* S'assurer que les cartes de timeline sont au-dessus des particules */
+.timeline-card-container {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+/* Style pour les liens LinkedIn - z-index plus bas pour éviter de passer au-dessus du bandeau */
+.linkedin-link {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+/* Style pour les liens dans le contenu des projets */
+.project-content a {
+  position: relative;
+  z-index: 1;
+}
+
+/* Style pour les boutons dans les projets - z-index plus bas pour éviter de passer au-dessus du bandeau */
+.project-button {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+/* Style pour les boutons dans les cartes de projets */
+.project-card button {
+  position: relative;
+  z-index: 1;
+}
