@@ -595,6 +595,45 @@ export default function Projets() {
                             scale: scaleProgress9,
                             opacity: scrollYProgress9
                         }}
+                        id="depine"
+                    >
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Depine | Cross-platform onboarding tool</h3>
+                                <Reveal>
+                                    <p className="mt-6 text-base leading-7 text-gray-600">
+                                        Depine is a project I started with friends to simplify the onboarding process for new hires in companies. The goal was to create an interface inspired by Docker, designed to welcome or generate a <code>.pine</code> file containing all the specific requirements to install on a new computer. Depine is fully cross-platform, so it can be used on Linux, Windows, and macOS, and is highly flexible. With Depine, companies can ensure that every new recruit has the right environment set up quickly and efficiently, regardless of their operating system. The tool is designed to be both user-friendly and powerful, making onboarding seamless for both IT teams and newcomers.
+                                    </p>
+                                </Reveal>
+                            </div>
+                            <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
+                                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
+                                    <div className="mx-auto max-w-xs px-8">
+                                        <a
+                                            href="https://wentioxdemoi.github.io/Depine"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
+                                        >
+                                            Website
+                                        </a>
+                                        <button
+                                            onClick={handleClick}
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
+                                        >
+                                            Timeline
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        ref={ref10}
+                        style={{
+                            scale: scaleProgress10,
+                            opacity: scrollYProgress10
+                        }}
                         id="Hackathonstarton"
                     >
                         <div className="mx-auto mt-16 max-w-2xl rounded-3xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none text-lg lg:text-xl">
@@ -617,7 +656,7 @@ export default function Projets() {
                                 </Reveal>
                                 <div className="p-2 w-full flex justify-center">
                                 <a
-                                            href="https://github.com/WentioxDemoi/Epitech"
+                                            href="https://github.com/WentioxDemoi?tab=repositories"
                                             target="_blank"
                                             rel="noreferrer"
                                             className="block rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
