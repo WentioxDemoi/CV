@@ -41,7 +41,7 @@ export default function Parcours() {
       id: "Hackathonhack",
     },
     {
-      heading: "Internship Thales",
+      heading: "Thales",
       subHeading: "2023",
       direction: "right",
       id: "stagethales",
@@ -53,7 +53,7 @@ export default function Parcours() {
       id: "unical",
     },
     {
-      heading: "Internship Thales",
+      heading: "Thales",
       subHeading: "2025",
       direction: "right",
       id: "stagedms",
@@ -63,6 +63,12 @@ export default function Parcours() {
       subHeading: "2024",
       direction: "left",
       id: "depine",
+    },
+    {
+      heading: "Thales",
+      subHeading: "2026",
+      direction: "right",
+      id: "stagethalesco2m",
     },
   ];
   return (

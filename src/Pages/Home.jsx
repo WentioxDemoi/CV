@@ -54,17 +54,19 @@ export default function Home() {
               <div className="space-y-6 max-w-xl text-lg lg:text-xl text-gray-700 lg:max-w-lg">
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  I am currently in my fifth year of study and looking for my first job in the field of software development.
+                  Passionate about high-constraint technological challenges, I am particularly interested in systems designed to operate in extreme environments. My goal is to contribute to space and aerospace projects that combine innovation, precision, and reliability.
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  After discovering system and network administration as well as software development in the field of IT, I am open to new opportunities.
+                  I am currently working at Thales Services Numériques as a Software Engineer, where I continue to strengthen my skills in software development and complex systems engineering.
+
                   </p>
                 </Reveal>
                 <Reveal>
                   <p className="leading-8 text-gray-700">
-                  I am offering my services for a full-time position starting from September 2025.
+                  Following experiences in software development, I am eager to take part in ambitious technological projects within demanding and mission-critical environments.
+
                   </p>
                 </Reveal>
                 <Reveal>

@@ -27,6 +27,7 @@ export default function Projets() {
     const ref8 = useRef(null)
     const ref9 = useRef(null)
     const ref10 = useRef(null)
+    const ref11 = useRef(null)
 
     let x;
     let y;
@@ -49,6 +50,7 @@ export default function Projets() {
     const { scrollYProgress: scrollYProgress8 } = useScroll({ target: ref8, offset: [x, y], });
     const { scrollYProgress: scrollYProgress9 } = useScroll({ target: ref9, offset: [x, y], });
     const { scrollYProgress: scrollYProgress10 } = useScroll({ target: ref10, offset: [x, y], });
+    const { scrollYProgress: scrollYProgress11 } = useScroll({ target: ref11, offset: [x, y], });
 
     const scaleProgress1 = useTransform(scrollYProgress1, [0, 1], [0.5, 1]);
     const scaleProgress2 = useTransform(scrollYProgress2, [0, 1], [0.5, 1]);
@@ -60,6 +62,7 @@ export default function Projets() {
     const scaleProgress8 = useTransform(scrollYProgress8, [0, 1], [0.5, 1]);
     const scaleProgress9 = useTransform(scrollYProgress9, [0, 1], [0.5, 1]);
     const scaleProgress10 = useTransform(scrollYProgress10, [0, 1], [0.5, 1]);
+    const scaleProgress11 = useTransform(scrollYProgress11, [0, 1], [0.5, 1]);
 
 
     // const { scrollYProgress } = useScroll({
@@ -217,7 +220,7 @@ export default function Projets() {
                             </div>
                         </div>
                     </motion.div>
-                    <h2 className="text-3xl font-bold mt-40 mb-4 text-center">Internships</h2>
+                    <h2 className="text-3xl font-bold mt-40 mb-4 text-center">Professional Experience</h2>
                     <motion.div
                         ref={ref3}
                         style={{
@@ -292,7 +295,7 @@ export default function Projets() {
                                 <h3 className='text-xl'>April 3, 2023 - August 31, 2023 [5 months]</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
-                                        As an intern in the IVVQ department at Thales Alenia Space, I had the opportunity to develop a tool to synthesize the results of satellite parts tests and to carry out a complete internship, from specification to deployment and training.
+                                        In the IVVQ department at Thales Alenia Space, I had the opportunity to develop a tool to synthesize the results of satellite parts tests and to carry out a complete internship, from specification to deployment and training.
                                     </p>
                                 </Reveal>
                                 <Reveal>
@@ -357,37 +360,110 @@ export default function Projets() {
                                 <h3 className='text-xl'>March 3, 2025 - September 2, 2025 [6 months]</h3>
                                 <Reveal>
                                     <p className="mt-6 text-base leading-7 text-gray-600">
-                                        As an intern at Thales Underwater Systems (now DMS), I had the opportunity to develop interactive modules for both the legacy and new versions of the Learning Management System (LMS) 'This Is Sonar' (TIS), covering various aspects of underwater acoustic propagation.
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className="text-base leading-7 text-gray-600">
                                         As a member of the Sonar Software Product (SSP) team, I collaborated with the GSS department on the mathematical aspects of the projects. For the legacy version of TIS, I used JavaScript, HTML, and CSS, while for the new version, I worked with ReactJS and TypeScript. I also integrated libraries such as P5JS and ThreeJS for 2D/3D visualizations, and ToneJS for acoustic simulations.
+                                        As an intern at Thales Underwater Systems (now DMS), I had the opportunity to develop interactive modules for both the legacy and new versions of the Learning Management System (LMS) 'This Is Sonar' (TIS), covering various aspects of underwater acoustic propagation. 
                                     </p>
                                 </Reveal>
+
                                 <Reveal>
                                     <p className="text-base leading-7 text-gray-600">
                                         Throughout the development process, I applied various design patterns to ensure code reusability, maintainability, and scalability. I had the opportunity to train various stakeholders on the operation of the interactive modules. The project was delivered on Bitbucket with up-to-date documentation for the legacy version of TIS, and separate documentation for the new version.
                                     </p>
                                 </Reveal>
+                                <div className='mt-6 grid gap-3'>
+                                    <div className='grid grid-cols-1 gap-x-4 sm:grid-cols-[auto_minmax(0,1fr)] items-center'>
+                                        <Reveal>
+                                            <p className='text-base leading-7 text-gray-600 whitespace-nowrap'>
+                                                Supervisor: Sébastien Deries
+                                            </p>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className='text-base leading-7 text-gray-600'>
+                                                sebastien.deries@thalesgroup.com
+                                            </p>
+                                        </Reveal>
+                                    </div>
+                                    <div className='grid grid-cols-1 gap-x-4 sm:grid-cols-[auto_minmax(0,1fr)] items-center'>
+                                        <Reveal>
+                                            <p className='text-base leading-7 text-gray-600 whitespace-nowrap'>
+                                                Gss: Iannis Bennaceur
+                                            </p>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className='text-base leading-7 text-gray-600'>
+                                                iannis.bennaceur@thalesgroup.com
+                                            </p>
+                                        </Reveal>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="p-2 lg:w-56 lg:max-w-md lg:flex-shrink-0 flex-none">
+                                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
+                                    <div className="mx-auto max-w-xs px-8">
+                                        <a
+                                            href="https://www.thalesgroup.com/en/global/activities/defence/underwater-systems"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
+                                        >
+                                            Learn more
+                                        </a>
+                                        <button
+                                            onClick={handleClick}
+                                            className="mt-5 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
+                                        >
+                                            Timeline
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        ref={ref11}
+                        style={{
+                            scale: scaleProgress11,
+                            opacity: scrollYProgress11
+                        }}
+                        id="stagethalesco2m"
+                    >
+                        <div className="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none project-card">
+                            <div className="p-8 sm:p-10 lg:flex-auto project-content">
+                                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Thales Services Numériques | Thales Alenia Space</h3>
+                                <h3 className='text-xl'>December 1, 2025 - Now</h3>
+                                <Reveal>
+                                    <p className="mt-6 text-base leading-7 text-gray-600">
+                                        As part of the CO2M project within the Copernicus program, I contributed to the development and maintenance of unit tests for the embedded software operating the satellite payload.
+                                    </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        This software is essential for ensuring the proper functioning of sensors and the management of the data collected to monitor CO2 emissions from space.
+                                    </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        My role involved designing, implementing, and updating automated tests to ensure the robustness, reliability, and quality of the embedded software.
+                                    </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        These tests help quickly detect anomalies, secure software updates, and verify compliance with mission requirements.
+                                    </p>
+                                </Reveal>
+                                <Reveal>
+                                    <p className="text-base leading-7 text-gray-600">
+                                        This work led to the identification of critical bugs before validation phases and helped achieve ESA coverage objectives: 100% Statement/Block and over 80% MCDC.
+                                    </p>
+                                </Reveal>
                                 <Reveal>
                                     <p className='mt-6 text-base leading-7 text-gray-600'>
-                                        Supervisor: Sébastien Deries
+                                        Supervisor: François Peña
                                     </p>
                                 </Reveal>
                                 <Reveal>
                                     <p className='text-base leading-7 text-gray-600'>
-                                        sebastien.deries@thalesgroup.com
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className='mt-6 text-base leading-7 text-gray-600'>
-                                        Gss: Iannis Bennaceur
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className='text-base leading-7 text-gray-600'>
-                                        iannis.bennaceur@thalesgroup.com
+                                        francois.pena@thalesgroup.com
                                     </p>
                                 </Reveal>
                             </div>
@@ -395,7 +471,7 @@ export default function Projets() {
                                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:item-center lg:justify-center lg:py-16 h-full flex items-center">
                                     <div className="mx-auto max-w-xs px-8">
                                         <a
-                                            href="https://www.thalesgroup.com/en/global/activities/defence/underwater-systems"
+                                            href="https://www.thalesaleniaspace.com/fr"
                                             target="_blank"
                                             rel="noreferrer"
                                             className="block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 project-button"
